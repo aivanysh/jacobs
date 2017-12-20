@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SW_Jacobs</title>
+    <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script type="text/javascript" src="script.js" defer>	</script>
+  <script type="text/javascript" src="var.js" defer>	</script>
+</head>
+<body>
+
+<header>
+	<section class = "logotypes">
+		<div id = "SwLogo"></div>
+		<div id = "between"></div>
+		<div id = "JacLogo"></div>
+	</section>
+</header>
+<nav>
+	<div id = "smalline">
+		<div class = "centernav">
+			<div class="fatblock"></div>
+		</div>
+	</div>
+	<div id = "fatline">
+		<div class = "centernav">
+			<div class="fatblock">
+				<h4>Home</h4>
+			</div>
+			<div id="navline">
+				<div class="swlinks">
+					<p>Web Module <i class="fa fa-caret-down"></i></p>
+					<div class="dropdown-content">
+		    			<a href="">WEB UA</a>
+		    			<a href="">Web NM</a>
+		  			</div>
+				</div>
+				<div class="swlinks">
+					<p>Web reports <i class="fa fa-caret-down"></i></p>
+					<div class="dropdown-content">
+		    			<a href="">Reports UA</a>
+		    			<a href="">Reports NM</a>
+		  			</div>
+				</div>
+				<div class="swlinks">
+					<p>RD Web</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<main>
+	<section class="maininfo">
+		<article>
+			<div class = "menulist">
+					<a href="#" onclick="newsshow()"><p>Новини</p></a>
+					<a href="#" onclick="kpinstshow()"><p>Інструкції КП</p></a>
+					<a href="#" onclick="tainstshow()"><p>Інструкції ТА</p></a>	
+					<div class="videolinc">
+							<a href="#" class="videolist"><p>Відеоінструкції</p><p>></p></a>
+						<div class="dropdown-video">
+							<p href="" onclick="chanel('video1')">Визиты</p>
+							<p href="" onclick="chanel('video2')">Справочники</p>
+							<p href="" onclick="chanel('video3')">Координаты</p>
+							<p href="" onclick="chanel('video4')">Задание</p>
+							<p href="" onclick="chanel('video5')">Отчеты</p>
+							<p href="" onclick="chanel('video6')">Фото</p>
+						</div>
+					</div>
+					<a href="#" onclick="apkshow()"><p>Інсталятори</p></a>
+					<a href="#"><p>Корисні посилання</p></a>
+			</div>
+			<div id = "installer">
+				
+			</div>
+		</article>
+		<article class = "contentholder" id = "contentholderid">
+				<article class = "newsone"  id = "slide1">
+					<div class="newstext" id="newstextid">
+						<h1>Розміщено інструкцію ключового користувача</h1>
+						<p>Інструкці описує обов’язки ключового користувача та особливості роботи з програмою SalesWorks</p>
+					</div>
+					<a id="newslincid" class="newslinc" href="">Переглянути</a>
+				</article>
+				<article class = "newsone" id = "slide2">
+					<div class="newstext" id="newstextid">
+						<h1>В тестовому режимі запущено новий Модуль Карт</h1>
+						<p>В оновленому Модулі карт оновлено дизайн, та функціональні можливості.</p>
+					</div>
+					<a id="newslincid" class="newslinc" href="">Перейти</a>
+				</article>
+				<article class = "newsone" id = "slide3">
+					<div class="newstext" id="newstextid">
+						<h1>Оновлено інструкцію торгового представника</h1>
+						<p>Інструкці описує обов’язки торгового представника та особливості роботи з програмою SalesWorks</p>
+					</div>
+					<a id="newslincid" class="newslinc" href="">Переглянути</a>
+				</article>
+			<div style="text-align:center">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			</div>
+		</article>
+		<article id = "newsholder">
+			<div class = "newsblock"></div>
+		</article>
+		<article id = "kpinstholder">
+			<a class = "instblock"></a>
+		</article>
+		<article id = "tainstholder">
+				<a class = "instblock"></a>
+		</article>
+		<article id="cinema">
+			<div class="videoholder" id="video1">
+				<iframe class = "frm" width="877" height="497" src="https://www.youtube.com/embed/xJKYZzjZ_vQ?enablejsapi=1"
+				 frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="videoholder"  id="video2">
+					<iframe class = "frm" width="877" height="497" src="https://www.youtube.com/embed/lA8Y3tRxIg4?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="videoholder"  id="video3">
+					<iframe class = "frm" width="877" height="497" src="https://www.youtube.com/embed/C6qMgUdaCqM?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="videoholder"  id="video4">
+					<iframe class = "frm" width="877" height="497" src="https://www.youtube.com/embed/nFISoFUwsaI?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="videoholder"  id="video5">
+					<iframe class = "frm" width="877" height="497" src="https://www.youtube.com/embed/J7jJuo3Zbec?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="videoholder"  id="video6">
+					<iframe class = "frm" width="877" height="497" src="https://www.youtube.com/embed/ITo4hvUMVPQ?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			</div>		
+		</article>
+		<article id = "apkholder">
+			<a class="apkfiles">
+				<div class="apklogo"></div>
+				<div class="apkdescription"></div>
+			</a>
+		</article>
+	
+	</section>
+
+	<section class="dopcontenthold" id = "dopcontentholdID">
+		<article class="dopcontent">
+			<div class="insidedopcontent" id = "insidedopcontent1"></div>
+			<h4>Список рекомендованих пристроїв</h4>
+			<p>Список пристроїв, що проходили тестування. Список містить як рекомендовані пристрої, так і пристрої, що використовувати не рекомендується. </p>
+		</article>
+		<article class="dopcontent dopcontentm">
+			<div class="insidedopcontent" id = "insidedopcontent2"></div>
+			<h4>Система реєстрації запитів</h4>
+			<p>У випадку виникнення проблеми з програмою SalesWorks створіть віш запит у службу підтримки.</p>
+		</article>
+		<article class="dopcontent dopcontentm">
+			<div class="insidedopcontent" id = "insidedopcontent3"></div>
+			<h4>SWE Manual</h4>
+			<p>Інструкція для роботи з програмою SalesWorks.</p>
+		</article>
+		<article class="dopcontent dopcontentm">
+				<div class="insidedopcontent" id = "insidedopcontent4"></div>
+				<h4>SoftServe Business Systems</h4>
+				<p>Детальніше про копанію SoftServe BS та про рішення, які надає наша компанія.</p>	
+		</article>
+
+	</section>
+</main>
+
+<footer>
+	<section class="ass">
+		<div>
+			<p>SalesWorks® - официально зарегистрированная торговая марка, охраняется законом.</p>
+			<p>© 1998-2017 SoftServe Business Systems. Все права защищены.</p>
+		</div>
+		<div>
+			<p>Contacts:</p>
+			<p>Phone UA: +38 (032) 240 90 96</p>
+			<p>Phone RU: +7 (499) 638 39 79</p>
+		</div>
+		<div>
+			<p>E-mail:</p> 
+			<p>support@softservebs.com</p>
+		</div>
+	</section>
+</footer>
+
+
+
+</body>
+</html>

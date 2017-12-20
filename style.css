@@ -1,0 +1,489 @@
+body{ 
+    font-family: Calibri, Arial, San-Serif;
+    /*font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-style:normal;*/
+    font-size: 100%;
+    margin:0;
+    position: relative;
+    min-height: 100%;
+    height: auto !important;
+    overflow-y: scroll; 
+    display:flex;
+    /*justify-content: center;*/
+    flex-direction: column;
+}
+html{
+    height:100%;
+
+}
+ 
+a{
+    text-decoration: none;
+}
+
+header{
+    width:1200px;
+    margin:0 auto;
+
+}
+
+ul,li{
+ list-style-type: none;
+}
+
+/**********************header**********************/
+.logotypes{
+    width:100%;
+    display:flex;
+}
+
+#SwLogo{
+    width:300px;
+    height:75px;
+    background-image: url("img\\SalesWorks2.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
+#between{
+    width:600px;
+}
+
+
+#JacLogo{
+    width:300px;
+    height:75px;
+    background-image: url("img\\Jacobs.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+}
+
+/*************************************************************/
+nav{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:55px;
+}
+
+#smalline{
+    width:100%;
+    height:5px;
+}
+
+#fatline{
+    width:100%;
+    height:50px;
+   /* background-color: #07d0df;  vidnovutu*/
+}
+
+.centernav{
+    display: flex;
+    width:1200px;
+    height:100%;
+    margin:0 auto;
+}
+
+.fatblock{
+    width:300px;
+    height:100%;
+    background-color: #06b7c2;
+}
+
+.fatblock h4{
+    margin: 10px 120px 13px 120px;
+    color:white;
+    font-size: 20px
+}
+
+#navline{
+    display: flex;
+    width:900px;
+    height: 100%;
+    background-color: #07d0df;
+}
+
+.swlinks i {}
+/*************************************************/
+
+.swlinks{
+    position: relative;
+    cursor: pointer;
+    width:190px;
+}
+
+.swlinks p{
+    margin: 13px 35px;
+    color:white;
+    font-size: 18px
+}
+
+.swlinks:hover p {
+font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+     transition: 0.3s;
+}
+
+.dropdown-content div {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.swlinks:hover .dropdown-content {
+    display: block;
+}
+/*******************main****************************/
+main{
+    display: flex;
+    width:1200px;
+    margin:0 auto;
+    flex-direction: column;
+}
+
+.maininfo{
+    display: flex;
+    flex-direction: row;
+}
+
+.menulist{
+    width:298px;
+    cursor: pointer;
+}
+
+.videolinc{
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-video {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 0px; 
+    left: 298px; 
+}
+
+
+.videolinc:hover .dropdown-video{
+    display:flex;
+    flex-direction: column;
+}
+
+.menulist > a,.videolinc > a{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border-left:1px solid #d9d9d9;
+    border-right:1px solid #d9d9d9;
+    border-bottom:1px solid #d9d9d9;
+}
+
+.menulist p{
+   align-self: center;
+   margin:0px 15px;
+   font-size: 18px;
+   color:#737373;
+}
+
+.menulist a:hover p{
+ color:#06b7c2;
+
+}
+
+.menulist a:hover{
+ background-color:rgb(250,250,250);
+}
+
+.dropdown-video p{
+    display:block;
+    width:100%;
+    margin: 5px;
+    height:50px;
+    color:#737373;
+    line-height: 3em;
+    margin-left: 10px;
+    border: none;
+    border-bottom:1px solid #d9d9d9;
+}
+
+.dropdown-video p:hover{
+    color:#06b7c2;
+}
+
+#installer{
+    margin-top:10px;
+    background-image: url("img\\installer.jpg");
+    background-size: cover;
+    width:300px;
+    height:200px;
+    border: 1px solid  #d9d9d9;
+}
+
+
+/******************news*******************************/
+.contentholder{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.newsone{
+    margin: 15px 0px 0px 15px;
+    height: 500px;
+    width:885px;
+    display:none;
+    background-size: cover;
+}
+
+.newstext{
+    width:50%;
+    opacity: 1;
+    position: relative;
+    left:20px;
+    top:120px;
+}
+/**************slides**************************************/
+#slide1{
+    background-image: url("img\\instbook.jpeg");
+}
+
+#slide2{
+    background-image: url("img\\MK.jpg");
+}
+#slide3{
+    background-image: url("img\\TA.jpeg");
+}
+
+
+.newstext h1{
+    font-size: 25px;
+    color:/*#737373*/white;
+}
+.newstext p{
+    font-size: 20px;
+    color:/*#06b7c2*/white;
+}
+
+.newslinc{
+    display: block;
+    width:120px;
+    height:40px;
+    position: relative;
+    left:150px;
+    top:160px;
+    background-color: #06b7c2;
+    color:white;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 2.2em;
+    opacity:1;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+/*****************dopcontent*****************************************/
+
+.dopcontenthold{
+    display:flex;
+    flex-direction: row;
+   width:1200px; 
+
+}
+
+.dopcontent{
+   width:280px; 
+   margin-top:20px;
+   text-align: justify;
+   box-shadow: 0px 0px 1px 1px #e7e5e5;
+   padding:10px;
+}
+.dopcontent h4,p{
+    color:rgb(92, 88, 88)
+}
+
+.dopcontentm{
+    margin-left: 26px;
+}
+
+.insidedopcontent{
+    width:100%;
+    height:150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#insidedopcontent1{
+    background-image: url(img\\recommended3.jpeg);
+}
+#insidedopcontent2{
+    background-image: url(img\\helpdesc3.jpg);
+}
+#insidedopcontent3{
+    background-image: url(img\\manual2.jpg);
+}
+#insidedopcontent4{
+    background-image: url(img\\ssbs3.jpg);
+}
+
+/************************Footer****************************/
+footer{
+    width:100%;
+    height:80px;
+    background-color: #07d0df;
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+}
+.ass{
+    width:1200px;
+    display: flex;
+}
+.ass div{
+    margin:5px 70px 5px 0px;
+}
+.ass p{
+    
+    margin: 3px;
+    color:white;
+}
+
+/*********news**********************/
+#newsholder{
+    display:none;
+}
+
+#kpinstholder{
+    display:none;
+}
+
+#tainstholder{
+    display:none;
+}
+
+
+.newsblock{
+    width:855px;
+    height:150px;
+    margin: 20px;
+    box-shadow: 0px 0px 3px 3px #e7e5e5;
+    padding:10px;
+}
+
+.newsblock h1{
+    color:#06b7c2;
+    font-size: 20px;
+    margin:10px 0px 10px 0px;
+}
+
+.newsblock p{
+    color:#555151;
+    font-size: 18px;
+}
+/********************kpinst****************************/
+.instblock{
+    display:block;
+    width:855px;
+    height:100px;
+    margin: 20px;
+    box-shadow: 0px 0px 3px 3px #e7e5e5;
+    padding:10px;
+    cursor: pointer;
+}
+
+.instblock h1{
+    color:#06b7c2;
+    font-size: 20px;
+    margin:10px 0px 10px 0px;
+}
+
+.instblock p{
+    color:#555151;
+    font-size: 18px;
+}
+
+.instblock:hover{
+    box-shadow: 0px 0px 7px 7px #e7e5e5;
+}
+
+/**********video*******************************/
+
+.videoholder{
+    margin:20px;
+    display: none;
+}
+
+/***************installers************************/
+#apkholder{
+    display: none;
+}
+
+.apkfiles{
+    display: flex;
+    width:875px;
+    margin:20px;
+    box-shadow: 0px 0px 3px 3px #e7e5e5;
+    cursor:pointer;
+}
+
+.apklogo{
+    width:150px;
+    height:150px;
+    background-image:url("img\\MMULogo.png");
+    background-size: contain;
+}
+
+.apkdescription {
+    margin-left: 20px
+}
+
+.apkdescription h2,h3{
+    color:#11949b;
+}
+
+.apkdescription p{
+    color:#848a8a;
+}
+
+.apkfiles:hover{
+    box-shadow: 0px 0px 5px 5px #e7e5e5;
+}
